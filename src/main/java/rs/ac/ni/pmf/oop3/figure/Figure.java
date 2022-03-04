@@ -1,18 +1,15 @@
 package rs.ac.ni.pmf.oop3.figure;
 
+import lombok.*;
+import lombok.experimental.SuperBuilder;
+
+@Getter
+@EqualsAndHashCode
+@RequiredArgsConstructor
+@SuperBuilder
 public abstract class Figure implements Comparable<Figure>
 {
 	private final String label;
-
-	public Figure(String label)
-	{
-		this.label = label;
-	}
-
-	public String getLabel()
-	{
-		return label;
-	}
 
 	public abstract double area();
 	public abstract double circumference();

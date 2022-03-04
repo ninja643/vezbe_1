@@ -48,6 +48,7 @@ public class Main
 
 		printDetails(figures);
 
+
 		Collections.shuffle(figures);
 
 		System.out.println("*******************************************");
@@ -72,13 +73,13 @@ public class Main
 	{
 		final Random random = new Random();
 		final List<Figure> figures = new ArrayList<>();
-		
+
 		for (int i = 0; i < numberOfCircles; i++)
 		{
 			final String label = "Circle_" + i;
 			final double radius = random.nextDouble() * SCALE;
 
-			figures.add(new Circle(label, radius));
+			figures.add(Circle.builder().label(label).r(radius).build());
 		}
 
 		for (int i = 0; i < numberOfRectangles; i++)
@@ -87,7 +88,7 @@ public class Main
 			final double a = random.nextDouble() * SCALE;
 			final double b = random.nextDouble() * SCALE;
 
-			figures.add(new Rectangle(label, a, b));
+			figures.add(Rectangle.builder().label(label).a(a).b(b).build());
 		}
 
 		return  figures;
