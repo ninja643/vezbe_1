@@ -1,7 +1,6 @@
-package rs.ac.ni.pmf.oop3.figure;
+package rs.ac.ni.pmf.oop3.vezba01.figure;
 
 import java.util.*;
-import rs.ac.ni.pmf.oop3.figure.*;
 
 public class Main
 {
@@ -37,14 +36,7 @@ public class Main
 		}
 
 //		Collections.sort(figures);
-		figures.sort(new Comparator<Figure>()
-		{
-			@Override
-			public int compare(Figure o1, Figure o2)
-			{
-				return Double.compare(o2.circumference(), o1.circumference());
-			}
-		});
+		figures.sort((o1, o2) -> Double.compare(o2.circumference(), o1.circumference()));
 
 		printDetails(figures);
 

@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3.figure;
+package rs.ac.ni.pmf.oop3.vezba01.figure;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;

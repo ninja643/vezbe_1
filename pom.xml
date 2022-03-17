@@ -33,7 +33,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>rs.ac.ni.pmf.oop3.figure.Main</mainClass>
+							<mainClass>rs.ac.ni.pmf.oop3.vezba01.figure.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
