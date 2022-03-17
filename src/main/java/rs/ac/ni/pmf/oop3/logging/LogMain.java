@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3;
+package rs.ac.ni.pmf.oop3.logging;
 
 import java.io.IOException;
 import java.util.logging.*;

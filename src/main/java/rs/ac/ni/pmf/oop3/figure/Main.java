@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3;
+package rs.ac.ni.pmf.oop3.figure;
 
 import java.util.*;
 import rs.ac.ni.pmf.oop3.figure.*;
