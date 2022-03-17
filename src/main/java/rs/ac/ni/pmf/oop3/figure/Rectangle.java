@@ -12,13 +12,6 @@ public class Rectangle extends Figure
 	private final double a;
 	private final double b;
 
-	protected Rectangle(final String label, final double a, final double b)
-	{
-		super(label);
-		this.a = a;
-		this.b = b;
-	}
-
 	@Override
 	public double area()
 	{

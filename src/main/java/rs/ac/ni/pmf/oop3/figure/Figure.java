@@ -7,7 +7,6 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode
 @RequiredArgsConstructor
 @SuperBuilder
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
 public abstract class Figure implements Comparable<Figure>
 {
 	private final String label;
