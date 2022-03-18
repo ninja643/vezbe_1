@@ -20,6 +20,19 @@
 			<version>1.18.22</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.36</version>
+		</dependency>
+
+		<!--<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.11</version>
+		</dependency>-->
+
 	</dependencies>
 
 	<build>
@@ -33,7 +46,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>rs.ac.ni.pmf.oop3.vezba01.figure.Main</mainClass>
+							<mainClass>rs.ac.ni.pmf.oop3.vezba02.logging.ConfigurableLogging</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
