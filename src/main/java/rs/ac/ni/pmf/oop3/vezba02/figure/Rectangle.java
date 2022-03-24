@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3.vezba01.figure;
+package rs.ac.ni.pmf.oop3.vezba02.figure;
 
 import lombok.*;
 import lombok.experimental.SuperBuilder;
@@ -7,19 +7,20 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode(callSuper = true)
 @ToString
 @SuperBuilder
-public class Circle extends Figure
+public class Rectangle extends Figure
 {
-	private final double r;
+	private final double a;
+	private final double b;
 
 	@Override
 	public double area()
 	{
-		return r * r * Math.PI;
+		return a * b;
 	}
 
 	@Override
 	public double circumference()
 	{
-		return 2 * r * Math.PI;
+		return 2 * (a + b);
 	}
 }
