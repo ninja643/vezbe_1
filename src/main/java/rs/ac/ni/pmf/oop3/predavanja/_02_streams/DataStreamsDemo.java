@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3.predavanja.streams;
+package rs.ac.ni.pmf.oop3.predavanja._02_streams;
 
 import java.io.*;
 

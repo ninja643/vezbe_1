@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3.predavanja.exceptions;
+package rs.ac.ni.pmf.oop3.predavanja._01_exceptions;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
