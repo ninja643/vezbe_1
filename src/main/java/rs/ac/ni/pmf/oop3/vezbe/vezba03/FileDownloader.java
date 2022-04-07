@@ -1,10 +1,9 @@
-package rs.ac.ni.pmf.oop3.vezba03;
+package rs.ac.ni.pmf.oop3.vezbe.vezba03;
 
 import java.io.*;
 import java.net.*;
 import java.nio.file.*;
 import java.util.*;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import lombok.extern.slf4j.Slf4j;
 
@@ -13,7 +12,7 @@ public class FileDownloader
 {
 	private static final int MAX_BUFFER_SIZE = 128 * 1024;
 
-	private Set<String> allowedFileTypes = Set.of("pdf", "txt", "doc", "docx");
+	private final Set<String> allowedFileTypes = Set.of("pdf", "txt", "doc", "docx");
 
 	public List<String> readLines(final String filePath) throws IOException
 	{
@@ -176,7 +175,7 @@ public class FileDownloader
 			final BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(reslolvedFileName)))
 		{
 			final byte[] buffer = new byte[MAX_BUFFER_SIZE];
-			int bytesRead = 0;
+			int bytesRead;
 			int totalDownloaded = 0;
 
 			while ((bytesRead = inputStream.read(buffer, 0, MAX_BUFFER_SIZE)) != -1)

@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3.vezba03;
+package rs.ac.ni.pmf.oop3.vezbe.vezba03;
 
 public class UnsupportedFileTypeException extends Exception
 {

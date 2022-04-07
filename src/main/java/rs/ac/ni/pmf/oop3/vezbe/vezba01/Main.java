@@ -1,6 +1,7 @@
-package rs.ac.ni.pmf.oop3.vezba02.figure;
+package rs.ac.ni.pmf.oop3.vezbe.vezba01;
 
 import java.util.*;
+import rs.ac.ni.pmf.oop3.vezbe.vezba01.figure.*;
 
 public class Main
 {

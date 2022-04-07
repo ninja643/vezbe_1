@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3.vezba02.logging;
+package rs.ac.ni.pmf.oop3.vezbe.vezba02.logging;
 
 import java.time.LocalDateTime;
 import java.time.ZoneId;

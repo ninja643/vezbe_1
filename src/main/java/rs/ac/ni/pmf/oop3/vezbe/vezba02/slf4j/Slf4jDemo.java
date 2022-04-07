@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3.vezba02.slf4j;
+package rs.ac.ni.pmf.oop3.vezbe.vezba02.slf4j;
 
 import lombok.extern.slf4j.Slf4j;
 
