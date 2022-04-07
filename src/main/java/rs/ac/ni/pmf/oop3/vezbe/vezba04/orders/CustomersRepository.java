@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CustomersRepository
 {
-	private List<Customer> _customers = Arrays.asList(
+	private final List<Customer> _customers = Arrays.asList(
 		Customer.builder().id(1).name("Stefan Walker").tier(1).build(),
 		Customer.builder().id(2).name("Daija Von").tier(1).build(),
 		Customer.builder().id(3).name("Ariane Rodriguez").tier(1).build(),

@@ -6,6 +6,8 @@ import java.util.List;
 
 public class OrdersRepository
 {
+	private CustomersRepository _customersRepository;
+
 	public List<Order> _orders = Arrays.asList(
 		Order.builder().id(1).orderDate(LocalDate.parse("2021-02-28")).deliveryDate(LocalDate.parse("2021-03-08")).status("NEW").customer(findCustomer(5)).build());
 //		Order.builder().id(2).orderDate("2021-02-28").deliveryDate("2021-03-05").status("NEW").3)
@@ -61,7 +63,7 @@ public class OrdersRepository
 
 	public List<Order> findAll()
 	{
-		return null;
+		return _orders;
 	}
 
 	private Customer findCustomer(int id)

@@ -11,4 +11,13 @@ public class Product
 	private String name;
 	private String category;
 	private double price;
+
+	public Product withDiscount(double discount) {
+		return Product.builder()
+			.id(id)
+			.name(name)
+			.category(category)
+			.price(price * (1 - discount))
+			.build();
+	}
 }
