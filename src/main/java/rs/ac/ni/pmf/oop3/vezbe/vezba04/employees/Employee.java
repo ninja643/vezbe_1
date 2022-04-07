@@ -10,6 +10,7 @@ public class Employee
 	long id;
 	String name;
 	Title title;
+	int salary;
 
 	public enum Title
 	{
