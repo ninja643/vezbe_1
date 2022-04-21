@@ -1,25 +1,31 @@
 package rs.ac.ni.pmf.oop3.vezbe.vezba05.zad02;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class MyThread extends Thread
 {
 	@Override
 	public void run()
 	{
-		System.out.println("custom run()");
+		log.info("custom run()");
 	}
 
 	@Override
 	public synchronized void start()
 	{
-		System.out.println("start ()");
+		log.info("start ()");
 		run();
 		super.start();
 	}
 
 	public static void main(String[] args)
 	{
-		MyThread myThread = new MyThread();
-		myThread.start();
-		System.out.println("main");
+		final MyThread myThread = new MyThread();
+//		myThread.start();
+//		log.info("main");
+
+		new Thread(myThread::run).start();
+		new Thread(myThread::start).start();
 	}
 }

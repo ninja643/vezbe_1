@@ -8,7 +8,7 @@ public class UnresponsiveUI
 {
 	private double d = 1;
 
-	public UnresponsiveUI() throws IOException
+	public UnresponsiveUI()
 	{
 		while (d > 0)
 		{
