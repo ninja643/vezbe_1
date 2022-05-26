@@ -1,4 +1,4 @@
-package rs.ac.ni.pmf.oop3.vezbe.vezba07.runners;
+package rs.ac.ni.pmf.oop3.vezbe.vezba07.converters;
 
 import java.util.concurrent.CountDownLatch;
 
