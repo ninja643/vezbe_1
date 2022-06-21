@@ -10,7 +10,8 @@ public class CountDownLatchDemo
 {
 	public static void main(String[] args) throws InterruptedException
 	{
-		final ExecutorService executorService = Executors.newCachedThreadPool();
+//		final ExecutorService executorService = Executors.newCachedThreadPool();
+		final ExecutorService executorService = Executors.newFixedThreadPool(3);
 
 		final List<ConverterTask> converters = new ArrayList<>();
 		final List<Future<String>> futures = new ArrayList<>();
@@ -40,12 +41,13 @@ public class CountDownLatchDemo
 		{
 			try
 			{
+				if (future.isCancelled())
+				{
+					System.out.println("This task has been abandoned!");
+					continue;
+				}
 				final String value = future.get();
 				System.out.println(value);
-			}
-			catch (CancellationException e)
-			{
-				System.out.println("This task has been abandoned!");
 			}
 			catch (ExecutionException e)
 			{

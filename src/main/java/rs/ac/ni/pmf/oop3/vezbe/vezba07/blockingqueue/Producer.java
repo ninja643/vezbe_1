@@ -19,10 +19,10 @@ public class Producer implements Runnable
 	{
 		for (long count = _limit; count > 0; count--)
 		{
-			int i = createProduct();
+			int product = createProduct();
 			try
 			{
-				_storage.put(i);
+				_storage.put(product);
 			}
 			catch (InterruptedException e)
 			{
